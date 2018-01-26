@@ -10,7 +10,7 @@ module Memorable
   end
 
   module InstanceMethods
-    def initializes
+    def initialize
       super
       @songs = []
       self.class.all << self
