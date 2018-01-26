@@ -12,7 +12,7 @@ module Memorable
   module InstanceMethods
     def initializes
       super
-      @song
+      @songs = []
       self.class.all << self
     end
   end
