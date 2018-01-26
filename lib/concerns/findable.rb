@@ -1,1 +1,3 @@
 module Findable
+  
+end
