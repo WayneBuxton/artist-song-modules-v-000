@@ -4,8 +4,8 @@ class Artist
 
   extend Memorable::ClassMethods
   include Memorable::InstanceMethods
-  include Paramable
-  extend Findable
+  include Paramable::InstanceMethods
+  extend Findable::ClassMethods
 
   attr_accessor :name
   attr_reader :songs
@@ -25,5 +25,5 @@ class Artist
     songs.each { |song| add_song(song) }
   end
 
-  
+
 end
